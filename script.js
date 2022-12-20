@@ -14,7 +14,7 @@ const toogle=(elementId)=>{
 };
 $('bt-start').addEventListener('click', function () {
     const proposition = $('proposition').value;
-    if (proposition.toLowerCase() === solution) {
+    if (proposition.toLowerCase().trim() === solution) {
         toogle("step2")
         toogle("step1")
 
